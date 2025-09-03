@@ -104,20 +104,6 @@ services:
 docker compose upしたままの場合はCtrl+Cで終了させて、 再度docker compose upを叩いて起動
 
 
-# PHPを使用する方法
----
-## php-fpmを使ってnginx経由でphpプログラムを動かす
-```
-vim public/phptest.php
-```
-
-ファイルの内容
-```
-<?php
-
-print('<h1>hello world!</h1>');
-```
-
 ## php-fpmを動かすためのコンテナを起動するために追記する
 ```
 vim compose.yml
